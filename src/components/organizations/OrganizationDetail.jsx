@@ -83,6 +83,19 @@ export default function OrganizationDetail({ org, onClose, onRefresh }) {
           </a>
         )}
       </div>
+
+      <div className="pt-2 border-t border-slate-100">
+        <Button
+          variant="destructive"
+          size="sm"
+          onClick={handleDelete}
+          disabled={deleting}
+          className="gap-2"
+        >
+          <Trash2 className="h-4 w-4" />
+          {deleting ? "Removendo..." : "Remover Organização"}
+        </Button>
+      </div>
     </div>
   );
 }
