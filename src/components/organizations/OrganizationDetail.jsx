@@ -1,7 +1,20 @@
-import { Building2, MapPin, Users, Globe, Mail, Phone } from "lucide-react";
+import { Building2, MapPin, Users, Globe, Mail, Phone, Trash2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { base44 } from "@/api/base44Client";
+import { useState } from "react";
 
-export default function OrganizationDetail({ org }) {
+export default function OrganizationDetail({ org, onClose, onRefresh }) {
+  const [deleting, setDeleting] = useState(false);
+
+  const handleDelete = async () => {
+    if (!confirm(`Tem certeza que deseja remover "${org.name}"?`)) return;
+    setDeleting(true);
+    await base44.entities.Organization.delete(org.id);
+    onRefresh?.();
+    onClose?.();
+  };
+
   return (
     <div className="space-y-6">
       <div className="flex items-start gap-4">
