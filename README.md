@@ -1,7 +1,9 @@
 **ImpactoTech**
+
 ImpactoTech é uma plataforma web que conecta organizações do terceiro setor de Lorena-SP com soluções tecnológicas, voluntários e recursos para ampliar seu impacto social.
 
 **Sobre o Projeto**
+
 A plataforma permite que ONGs, institutos, associações e fundações publiquem suas demandas tecnológicas e encontrem profissionais dispostos a contribuir com seu tempo e conhecimento para causas sociais.
 
 **Funcionalidades**
