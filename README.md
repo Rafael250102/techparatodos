@@ -18,4 +18,5 @@ A plataforma permite que ONGs, institutos, associações e fundações publiquem
 - Hospedagem: Base44 Platform
 
 **Contexto**
+
 Projeto desenvolvido para fortalecer o ecossistema de impacto social de Lorena, São Paulo, conectando instituições locais como SOS, Aldeias Infantis, Despertando Amor Hoje e outras organizações beneficentes com a comunidade tech da região.
